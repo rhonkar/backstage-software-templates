@@ -61,7 +61,7 @@ jobs:
         shell: bash
         run: |
           # Connects the argocd repo
-          repo="https://github.com/rhonkar/${{values.app_name}}.git"
+          repo="https://github.com/rhonkar-global/${{values.app_name}}.git"
           argocd repo list | grep -q $repo || argocd repo add $repo
 
           # Creates the argocd app
